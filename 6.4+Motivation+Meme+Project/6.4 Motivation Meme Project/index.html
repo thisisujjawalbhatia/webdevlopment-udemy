@@ -1,0 +1,69 @@
+<!-- 
+  TODO: Create a motivational post website.
+Style it how ever you like. 
+Look at the goal image for inspiration.
+But it must have the following features:
+1. The main h1 text should be using the Regular Libre Baskerville Font from Google Fonts:
+  https://fonts.google.com/specimen/Libre+Baskerville
+2. The text should be white and background black.
+3. Add your own image into the images folder inside assets. It should have a 5px white border.
+4. The text should be center aligned.
+5. Create a div to contain the h1, p and img elements. Adjust the margins so that the image and text are centered on the page. 
+  Hint: You horizontally center a div by giving it a width of 50% and a margin-left of 25%.
+  Hint: Set the image to have a width of 100% so it fills the div. 
+6. Read about the text-transform property on MDN docs to make the h1 uppercase with CSS.
+  https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Motivational Poster</title>
+</head>
+<style>
+  body{
+    background-color: black;
+  }
+  div{
+    width: 50%;
+    margin-left: 25%;
+    /* background-color: white; */
+  }
+  #image{
+    border: 5px solid white;
+    width: 100%;
+    margin-top: 30%;
+
+  }
+  #heading{
+    font-family: "Libre Baskerville";
+    color: aliceblue;
+    /* margin-left: 20%; */
+    width: 100%;
+    text-align: center;
+    
+  }
+  #heading2{
+    font-family: cursive;
+    font-size: 10px;
+    color: aliceblue;
+    /* margin-left: 25%; */
+    text-align: center;
+    width: 100%;
+  }
+</style>
+<body>
+  <div>
+    <img id ="image" src="./assets/images/daenerys.jpeg" />
+  </div>
+  <div>
+    <h1 id="heading">THAT SPECIAL MOMENT</h1>
+  </div>
+  <div>
+    <h3 id="heading2">When you find perfect avacado at the supermarket</h3>
+  </div>
+  
+  
+</body>
+</html>
